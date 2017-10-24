@@ -32,6 +32,7 @@ def ec2_box_init(user_file_url):
 
         subprocess.call(["adduser", "--disabled-password", "--gecos", "", username])
         subprocess.call(["adduser", username, "sudo"])
+        subprocess.call(["usermod", "-g", "ubuntu", username])
 
         home_directory = os.path.join("/home", username)
         ssh_directory = os.path.join(home_directory, ".ssh")
