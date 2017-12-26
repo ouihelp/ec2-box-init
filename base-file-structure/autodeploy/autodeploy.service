@@ -1,0 +1,8 @@
+[Unit]
+Description=Autodeploy
+
+[Service]
+ExecStart=/home/ubuntu/autodeploy/autodeploy /home/ubuntu/autodeploy/autodeploy.yml
+
+[Install]
+WantedBy=multi-user.target

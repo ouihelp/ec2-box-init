@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/home/ubuntu/scripts/to-docker -p 443:8000 --restart=unless-stopped -d --cidfile /home/ubuntu/docker-container.cid --dns 8.8.8.8 CONTAINER_URI

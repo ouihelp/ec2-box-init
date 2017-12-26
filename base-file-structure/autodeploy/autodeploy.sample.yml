@@ -1,0 +1,16 @@
+host: hostname  # Reference to the host on outgoing messages
+listen: 0.0.0.0:8080  # Address/port on which to listen for DockerHub messages
+
+docker_socket_path: /var/run/docker.sock  # Docker Engine socket
+repository_name: organization/repository  # Repository name on DockerHub
+tag: latest  # Tag on which to listen for autodeploy
+
+dockerhub_user: user # Username on Docker Hub
+dockerhub_password: password  # Password on Docker Hub
+
+version_command: echo foo  # Command to execute to determine the version that will be deployed
+check_command: exit 0  # Command to execute to determine if we can deploy
+deploy_command: exit 0  # Command to execute to deploy
+
+slack_channel: "#a_channel"  # Slack channel on which the message will be sent
+slack_token: xoxb-slack-token  # Token that will be used to talk with the Slack API

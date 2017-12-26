@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo docker kill "$(cat /home/ubuntu/docker-container.cid)" && sudo rm -f /home/ubuntu/docker-container.cid && /home/ubuntu/scripts/launch
