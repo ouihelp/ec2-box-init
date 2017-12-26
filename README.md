@@ -10,4 +10,5 @@ export PATH=/root/.local/bin:$PATH
 curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python
 pipsi install https://github.com/ouihelp/ec2-box-init/archive/master.zip#egg=ouihelp_ec2_box_init
 ec2-box-init <URL_TO_THE_FILE>
+curl -OL https://github.com/ouihelp/ec2-box-init/raw/master/base-file-structure.tar.gz && tar -xvf base-file-structure.tar.gz
 ```
