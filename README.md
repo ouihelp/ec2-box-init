@@ -4,7 +4,7 @@
 
 ```
 #!/bin/bash
-apt install -y --no-install-recommends python python-pip
+apt update && apt install -y --no-install-recommends python python-pip
 pip install virtualenv
 export PATH=/root/.local/bin:$PATH
 curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python
