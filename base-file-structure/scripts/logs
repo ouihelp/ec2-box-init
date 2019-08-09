@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo docker logs $(sudo docker ps --format "{{.ID}}" --filter "ancestor=IMAGE_NAME") -f
