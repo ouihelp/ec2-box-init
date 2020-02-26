@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import os
 import subprocess
@@ -6,11 +6,6 @@ import sys
 
 import click
 import requests
-
-
-if (sys.version_info.major, sys.version_info.minor) != (2, 7):
-    click.secho("Sorry, only Python 2.7 is supported")
-    sys.exit(1)
 
 
 @click.command()
