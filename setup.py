@@ -8,5 +8,5 @@ setup(
     py_modules=["ec2_box_init"],
     author="Bastien Gandouet",
     author_email="bastien@ouihelp.fr",
-    install_requires=["click==7.0", "requests==2.23.0",],
+    install_requires=["click==7.0", "requests==2.31.0",],
 )
